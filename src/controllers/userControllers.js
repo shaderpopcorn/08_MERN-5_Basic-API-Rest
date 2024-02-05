@@ -15,7 +15,7 @@ const createUser = async (req, res) => {
   const newUser = req.body;
   const createdUser = new User(newUser);
   createdUser.save();
-  res.status(200).json({ data: createdUser });
+  res.status(201).json({ data: createdUser });
 };
 
 const updateUser = async (req, res) => {
