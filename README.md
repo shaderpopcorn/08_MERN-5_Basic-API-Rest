@@ -11,6 +11,7 @@ Get User By Id -> http://localhost:4001/<id_of_user>
 <!-- POST -->
 
 Create User -> http://localhost:4001/
+
 req.body needs to contain the following JSON object:
 {
 "firstName": "<first-name>",
@@ -23,6 +24,7 @@ req.body needs to contain the following JSON object:
 <!-- PUT -->
 
 Update User -> http://localhost:4001/<id_of_user>
+
 req.body needs to contain the following JSON object:
 {
 "firstName": "<first-name>",
