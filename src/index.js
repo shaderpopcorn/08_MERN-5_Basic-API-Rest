@@ -1,8 +1,14 @@
 require("./config/db");
 const express = require("express");
 const app = express();
+const { clearAndInsertData } = require("./models/user-data");
+const userRouter = require("./routes/userRoutes");
 
 app.use(express.json());
+
+clearAndInsertData();
+
+app.use("/users", userRouter);
 
 const PORT = 4001;
 app.listen(PORT, (req, res) => {
